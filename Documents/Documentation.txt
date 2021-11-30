@@ -1,0 +1,142 @@
+Name of the site: "HalKhata"
+
+Site Goals: 
+	Allow the user to Log daily Exercise, Food Intake, Spendings and 
+	Coding projects.
+
+Target Audience:
+	Me
+
+Use Case Senario:
+	Upon opening the site on a browser I was prompted to enter my Password.
+	After successfully varifing I navigated to the "Activity" page. I wanted to log 
+	todays workout so I clicked on "+Log Today's Activity" and was taken to another
+	page where I could select the type of my activity from a list. Upon selecting the
+	type "Workout" an empty template appeared Where I could write names of individual
+	exercises, set and reps per set; muscle sets that's been activated and duration of the 
+	activity. I clicked the 'save' button and was redirected back to the "Activity" page
+	where my newly saved activity appeard by date. 
+	  I then navigated to the "Meals" page and it was showing my daily caloric intake
+	on a graph. I clicked the "Add" button and a form appeared where I named the meal
+	as "break fast" and selected some food items and entered their quantity. After saving 
+	details about the meal appeared and I could see how much calorie, carbs, protien, and
+	fat I took in.
+	The "Spending" page was just a simple notepad, I had to do the calculations my self.
+	And lastly in the "Coding" page there was a list of projects and in there I could note
+	my proggress and other things about it.
+
+
+
+Page:					Role:
+
+Index					The index page for the time being is left
+					empty.
+
+Activity					Shows the user's previous records (the
+					records are clickable) on a news feed
+					and contains a "Log todays activity" link.
+
+    saved activity details			Shows the detailed info of an individual
+					activity record.
+
+    log activity				Lets the user log his/her activity. (After 
+					the user has selected a type an empty 
+					template would be shown based on the
+					selected type.)
+
+Meals					Shows graphs of calorie, carb, fat, protien
+					intake and shows previous records on a news
+					feed. Contains a link "add meal".
+
+    saved meal details				Shows the detailed info of an individual
+					meal record.
+	
+    add meal				Lets the user select a food item ( like rice, 
+					potato, oil, chicken, milk etc.) and enter a 
+					quantity. The nutritional values per 100g
+					of each food item is stored in the data base.
+					Upon clicking on the 'save' button the user 
+					will be redirected to the details page and the
+					new record would be shown.
+
+Spending 					Contains  a blank  note pad like screen  on 
+					which the user can  write. This record will be 
+					automatically saved at the end of each day.
+					By scrolling down the user will be able to see
+					their previous records.
+
+Coding					Shows the list of Current and finished projects
+					the user created sorted by date. Contains a "start 
+					new project" button. On clicking the link of a
+					project the user will be directed to a Notepad like
+					page.
+
+    project					Here the user's previous records are shown with 
+					an empty space at the top of the page to let them 
+					write notes.(like the Spending page)
+
+
+Models:
+	Index:
+		User
+		    username
+		    password
+	
+	Activity:
+		Activity
+		    date
+		    time
+		    activities
+
+		Cycling
+		    distance
+		    duration
+		    elevation gain
+		    avg. speed
+		    
+		Workout
+		    exercises, reps, sets
+		    duration
+		    muscles activated
+
+		Walk
+		    distance
+		    duration
+		    elevation gain
+		    avg. speed
+
+
+	Meal:
+		Meal
+		    name
+		    fooditems
+		    total calorie
+		    total fat
+		      ''  protien
+		      ''  carbs
+		    date, time
+
+		FoodItemCategory
+		    name
+ 
+		FoodItem
+		    name
+		    category
+		    calorie/100g
+		    protien/100g
+		    fat/100g
+		    carbs/100g
+
+	Spending:
+		Spending
+		    date
+		    entry
+
+	Coding:
+		Project
+		    name
+
+		Record
+		    project name
+		    date
+		    entry
