@@ -1,0 +1,95 @@
+:root {
+    --primary-cta-color : #3955E0;
+    --back-ground-color: #F7F7F7;
+    --primary-text-color: #383838;
+    --nav-link-color: black;
+}
+
+body {
+    font-family: 'Segoe Script';
+    text-align: center;
+    background: var(--back-ground-color);
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+header {
+    background: white;
+}
+
+.nav-bar {
+    width: 1024px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav .logo, nav ul {
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.logo a span {
+    color: var(--primary-cta-color);
+}
+
+a.nav-link {
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #3C3C3C;
+    padding: 8px 2em 14px 2em;
+}
+
+a.nav-link:hover {
+    background: var(--primary-text-color);
+    color: var(--back-ground-color);
+}
+
+section.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10em;
+
+}
+
+.hero-text {
+    margin-top: 3em;
+}
+
+.hero-text h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    color: #5D5D5D;
+}
+
+.hero-text p {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+}
+
+.hero img {
+    width: 30%;
+}
