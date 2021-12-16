@@ -202,6 +202,7 @@ h1.title {
     margin-top: 220px;
 }
 
+
 .exercises tr>td:first-child, tr>th:first-child {
     padding-right: 205px;
 }
@@ -226,10 +227,47 @@ section.select-type {
     text-decoration: none;
     padding: 25px;
     margin: 5px;
+}
+
+#exercise {
+    font-family: 'Segoe Script';
+    font-size: 22px;
+}
+
+
+.select-type a:hover {
     background: rgb(228, 228, 228);
 }
 
 
 #workout {
     grid-column-start: 1;
+}
+
+
+.ride {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+
+#distance {
+    grid-column-start: 2;
+}
+
+#avg_speed {
+    grid-column-start: 3;
+}
+
+#duration {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}  
+#elev_gain  {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+#cal_burn {
+    grid-column-start: 3;
+    grid-row-start: 4;
 }
