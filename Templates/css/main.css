@@ -24,9 +24,21 @@ h2 {
     
 }
 
+
+th, td {
+    font-size: 22px;
+    padding: 8px 10px;
+}
+
+td {
+    padding-top: 15px;
+}
+
+
 .container {
     width: 1024px;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 header {
@@ -179,4 +191,45 @@ h1.title {
     
 }
 
-/* Activity details*/
+/* Activity details */
+
+.exercises th {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.exercises {
+    margin-top: 220px;
+}
+
+.exercises tr>td:first-child, tr>th:first-child {
+    padding-right: 205px;
+}
+
+.exercises tr>td:nth-child(2), tr>th:nth-child(2) {
+    padding-right: 135px;
+}
+
+section.select-type {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.select-type p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.select-type a {
+    text-decoration: none;
+    padding: 25px;
+    margin: 5px;
+    background: rgb(228, 228, 228);
+}
+
+
+#workout {
+    grid-column-start: 1;
+}
