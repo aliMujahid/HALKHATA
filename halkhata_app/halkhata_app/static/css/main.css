@@ -1,0 +1,276 @@
+:root {
+    --primary-cta-color : #3955E0;
+    --back-ground-color: #F7F7F7;
+    --primary-text-color: #383838;
+    --nav-link-color: black;
+}
+
+body {
+    font-family: 'Segoe Script';
+    text-align: center;
+    background: var(--back-ground-color);
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    margin: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    
+}
+
+
+th, td {
+    font-size: 22px;
+    padding: 8px 10px;
+}
+
+td {
+    padding-top: 15px;
+}
+
+
+.container {
+    width: 1024px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+header {
+    background: white;
+}
+
+.nav-bar {
+    width: 1024px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav .logo, nav ul {
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.logo a span {
+    color: var(--primary-cta-color);
+}
+
+a.nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3C3C3C;
+    padding: 8px 36px 14px 36px;
+}
+
+a.nav-link:hover {
+    background: var(--primary-text-color);
+    color: var(--back-ground-color);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 166px;
+
+}
+
+.hero-text {
+    margin-top: 100px;
+}
+
+.hero-text h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 76px;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    color: #5D5D5D;
+}
+
+.hero-text p {
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.hero img {
+    width: 30%;
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* CTA ancor */
+
+.cta-btn {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    background:var(--primary-cta-color) ;
+    padding: 0.6em 1.8em;
+    margin: 2.2em auto 2.2em 0;
+    border-radius: 33px;
+
+}
+
+/* Activity List*/
+
+.activity-list {
+    padding-right: 50px;
+}
+
+.activity-list li {
+    padding-bottom: 83px;
+    margin-bottom: 83px;
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.activity-list li a{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 66px;
+    text-decoration: none;
+    text-align: left;
+    color: var(--primary-text-color);
+}
+
+.info {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 46px;
+}
+
+.activity>.info {
+    margin-top: 60px;
+}
+
+p.date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1.title {
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.activity .main-info-type {
+    font-size: 14px;
+}
+
+.activity-list li a h1 {
+    grid-column-start: 1;
+    
+}
+
+/* Activity details */
+
+.exercises th {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.exercises {
+    margin-top: 220px;
+}
+
+
+.exercises tr>td:first-child, tr>th:first-child {
+    padding-right: 205px;
+}
+
+.exercises tr>td:nth-child(2), tr>th:nth-child(2) {
+    padding-right: 135px;
+}
+
+section.select-type {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.select-type p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.select-type a {
+    text-decoration: none;
+    padding: 25px;
+    margin: 5px;
+}
+
+#exercise {
+    font-family: 'Segoe Script';
+    font-size: 22px;
+}
+
+
+.select-type a:hover {
+    background: rgb(228, 228, 228);
+}
+
+
+#workout {
+    grid-column-start: 1;
+}
+
+
+.ride {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    text-align: left;
+}
+
+
+#distance {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#avg_speed {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+#duration {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}  
+#elev_gain  {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+#cal_burn {
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
