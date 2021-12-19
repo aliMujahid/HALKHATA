@@ -88,6 +88,10 @@ Models:
 		    time
 		    activities
 
+		Activity_type
+		    name
+		    slug
+
 		Cycling
 		    distance
 		    duration
@@ -98,6 +102,11 @@ Models:
 		    exercises, reps, sets
 		    duration
 		    muscles activated
+
+			Exercise
+			    name
+			    muscle group
+			    dificulty level
 
 		Walk
 		    distance

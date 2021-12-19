@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #my apps
-    'halkhata_app',
+    'halkhata_app.apps.HalkhataAppConfig',
+    'activity.apps.ActivityConfig',
 ]
 
 MIDDLEWARE = [

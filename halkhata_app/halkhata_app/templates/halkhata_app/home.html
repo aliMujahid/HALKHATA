@@ -1,44 +1,15 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <title>HalKhata</title>
-</head>
-<body>
-    
 
-        <header>
-            <div class="nav-bar">
-                <nav>
-                    <div class="logo">
-                        <a href="#">Hal<span>khata</span></a>
-                    </div>
-                    <ul id="primary-nav">
-                        <li class="selected"><a class="nav-link" href="#">Activity</a></li>
-                        <li><a href="#" class="nav-link">Meal</a></li>
-                        <li><a href="#" class="nav-link">Spending</a></li>
-                        <li><a href="#" class="nav-link">Coding</a></li>
-                    </ul>
-                    <!-- secondary-nav -->
-                </nav>
-            </div>
-        </header>
-        <div class="container">
-        <section class="hero">
+{% block container %}
+<section class="hero">
 
-            <div class="hero-text">
-                <h1>halkhata</h1>
-                <p>your personal log book</p>
-            </div>
-
-            <img src="{% static 'images/hero_illustration.svg' %}" alt="hero image">
-
-        </section>
+    <div class="hero-text">
+        <h1>halkhata</h1>
+        <p>your personal log book</p>
     </div>
-</body>
-</html>
+
+    <img src="{% static 'images/hero_illustration.svg' %}" alt="hero image">
+
+</section>
+{% endblock container %}
