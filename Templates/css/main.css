@@ -248,15 +248,18 @@ section.select-type {
 .ride {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    text-align: left;
 }
 
 
 #distance {
     grid-column-start: 2;
+    grid-row-start: 1;
 }
 
 #avg_speed {
     grid-column-start: 3;
+    grid-row-start: 1;
 }
 
 #duration {
