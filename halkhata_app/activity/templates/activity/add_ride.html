@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+<section class="ride">
+<form action="{% url 'activity:add_activity_by_type' 'ride' %}" method="post">
+    <div class="heading">
+        <p class="date">date: {{date}} </p>
+        <p class="date">time:{{time}} </p>
+        <h1 class="title">ride</h1>
+    </div>
+    <input type="text" placeholder="name">
+    <div id="distance" class="info">
+        <h2 class="main-info-value"><input type="number" placeholder="0">km</h2>
+        <p class="main-info-type">Distance</p>
+    </div>
+    <div id="avg_speed" class="info">
+        <h2 class="main-info-value"><input type="number" placeholder="0">km/h</h2>
+        <p class="main-info-type">Avg. Speed</p>
+    </div>
+    <div id="duration" class="info">
+        <h2 class="main-info-value"><input type="number" placeholder="0">s</h2>
+        <p class="main-info-type">Duration</p>
+    </div>
+    <div id="elev_gain" class="info">
+        <h2 class="main-info-value"><input type="number" placeholder="0">m</h2>
+        <p class="main-info-type">Elev. Gained</p>
+    </div>
+    <div id="cal_burn" class="info">
+        <h2 class="main-info-value"><input type="number" placeholder="0"></h2>
+        <p class="main-info-type">Calories Burned</p>
+    </div>
+    <input type="submit" value="ADD">
+    {% csrf_token %}
+</form>
+</section>
+{% endblock container %}

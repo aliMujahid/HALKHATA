@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+<section class="ride">
+
+    <div class="heading">
+        <p class="date">date: {{activity.date}} </p>
+        <p class="date">time:{{activity.time}} </p>
+        <h1 class="title">{{activity.type}}</h1>
+    </div>
+    <div id="distance" class="info">
+        <h2 class="main-info-value">{{activity.distance}}</h2>
+        <p class="main-info-type">Distance</p>
+    </div>
+    <div id="avg_speed" class="info">
+        <h2 class="main-info-value">{{activity.avg_speed}}</h2>
+        <p class="main-info-type">Avg. Speed</p>
+    </div>
+    <div id="duration" class="info">
+        <h2 class="main-info-value">{{activity.duration}}</h2>
+        <p class="main-info-type">Duration</p>
+    </div>
+    <div id="elev_gain" class="info">
+        <h2 class="main-info-value">{{activity.elev_gain}}</h2>
+        <p class="main-info-type">Elev. Gained</p>
+    </div>
+    <div id="cal_burn" class="info">
+        <h2 class="main-info-value">{{activity.cal_burned}}</h2>
+        <p class="main-info-type">Calories Burned</p>
+    </div>
+    
+</section>
+{% endblock container %}

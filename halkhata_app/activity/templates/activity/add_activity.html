@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block container %}
+<section class="select-type">
+    <p>Please select the type of your activity:</p>
+    <a href="#" id="workout">
+        <h1 class="title">workout</h1>
+    </a>
+    <a href="{% url 'activity:add_activity_by_type' 'ride' %}" id="ride">
+        <h1 class="title">ride</h1>
+    </a>
+    <a href="#" id="run">
+        <h1 class="title">run</h1>
+    </a>
+    <a href="#" id="walk">
+        <h1 class="title">walk</h1>
+    </a>
+</section>
+{% endblock container %}
